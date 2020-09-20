@@ -1,0 +1,3 @@
+FROM alpine
+COPY webpage.sh /
+CMD ["/webpage.sh"]
