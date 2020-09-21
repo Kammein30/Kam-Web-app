@@ -1,13 +1,12 @@
 steps:
   # Build the container image
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['build', '-t', 'gcr.io/all-about-kam/webpage', '.']
+    args: ['build', '-t', 'gcr.io/all-about-kam/kamservice', '.']
   # Push the container image to Container Registry
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['push', 'gcr.io/all-about-kam/webpage']
+    args: ['push', 'gcr.io/all-about-kam/kamservice']
   # Deploy container image to Cloud Run
-  - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
-    entrypoint: gcloud
-    args: ['run', 'deploy', 'kamservice', '--image', 'gcr.io/all-about-kam/webpage', '--region', 'REGION', '--platform', 'managed']
+  - name: 'gcr.io/cloud-builders/gcloud'
+    args: ['beta', 'run', 'deploy', 'kamservice', '--image', 'gcr.io/all-about-kam/kamservice', '--region', 'us-east1', '--platform', 'managed', '--allow-unauthenticated']
 images:
-  - gcr.io/all-about-kam/webpage
+  - gcr.io/all-about-kam/kamservice
