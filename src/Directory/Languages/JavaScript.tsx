@@ -6,7 +6,7 @@ class JavaScript extends Component {
             <div>
                 <h1 style={{textAlign:"center"}}>JavaScript Projects</h1>
                 <p>It updated finally!!</p>
-                <p>About time!!!</p>
+                <p>About time!!!!!</p>
             </div>
         );
     }
