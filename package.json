@@ -43,6 +43,5 @@
   "devDependencies": {
     "@types/react-router-dom": "^5.1.5",
     "typings-for-css-modules-loader": "^1.7.0"
-  },
-  "homepage": "https://all-about-kam.ue.r.appspot.com/"
+  }
 }
