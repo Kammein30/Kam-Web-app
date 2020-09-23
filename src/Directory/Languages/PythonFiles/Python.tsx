@@ -1,15 +1,21 @@
-import React, {Component} from 'react';
-import SinglePythonFIle from "./singlePythonFIle";
-
+import React, {Component, CSSProperties} from 'react';
+import SingleFile from "../singleFile";
 
 const pythonFile = require('./Python.json');
-let key = 0;
+let key = -1;
+
 class Python extends Component {
+
+    divStyling : CSSProperties = {
+        backgroundColor: key % 2 === 0 ? 'lightblue' : 'lightgreen',
+        height: "100vh"
+    }
+
     render() {
         return (
-            <div style={{backgroundColor: key % 2 === 0 ? 'lightblue' : 'lightgreen', height: "100vh"}}>
+            <div style={this.divStyling}>
             {pythonFile.map((file:typeof pythonFile) => (
-                <SinglePythonFIle key={key} id={key++} title={file.title} description={file.description} details={file.details}/>
+                <SingleFile key={key} id={key++} title={file.title} description={file.description} details={file.details}/>
             ))}
             </div>
             );

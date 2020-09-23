@@ -1,0 +1,31 @@
+[
+  {
+    "title": "Bus Tracker Application",
+    "description": "Created a Bus-Tracker application to improve customer public bus search experience. Used Ajax to dynamically update a web page that contained a map with “push-pins” and a table to display to track bus movement, as well as allow users to search for buses that traveled over particular speeds. Code was developed using MERN stack.",
+    "details": [
+      "Created an interactive map using JavaScript’s MapQuest library.",
+    "Collected route info: latitude, longitude, speed, distance, etc. using Node.js, Express, and MongoDB for server-side development.",
+      "Executed data requests to the server and loaded that JSON encoded data to webpage using Ajax and GET.",
+      "Enhanced User Experience for easy interface, functionality, and speed through Bootstrap, CSS3, and React."
+    ]
+  },
+  {
+    "title": "Data Chart",
+    "description": "Created a web page that presented data results in a table format as well as a graphical chart format.",
+    "details": [
+      "Used Bootstrap to create a responsive HTML page.",
+      "Used jQuery and selectors to access and modify the DOM.",
+      "Defined and implemented jQuery-based event handlers, callbacks and animations.",
+      "Used the HTML <canvas> and Chart.js external library to create the graphical chart."
+    ]
+  },
+  {
+    "title": "1st personal Webpage (NOT THIS ONE)!",
+    "description": "Developed personal website that would allow recruiters, students, and friends to see what I have been doing career wise and life wise",
+    "details": [
+      "Queried tabs to different pages of website through jQuery so that no server side code was needed.",
+      "Customized UI through CSS3 methods.",
+      "Shorten code writing through arrow functions"
+    ]
+  }
+]

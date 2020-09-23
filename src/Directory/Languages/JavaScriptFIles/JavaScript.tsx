@@ -1,12 +1,23 @@
-import React, {Component} from 'react';
+import React, {Component, CSSProperties} from 'react';
+import SingleFile from "../singleFile";
 
+let key = -1;
+const javaScriptFile = require('./JavaScript.json')
 class JavaScript extends Component {
+
+    divStyling : CSSProperties = {
+        backgroundColor: key % 2 === 0 ? 'lightblue' : 'lightgreen',
+        height: "100vh"
+    }
+
     render() {
         return (
             <div>
-                <h1 style={{textAlign:"center"}}>JavaScript Projects</h1>
-                <p>It updated finally!!</p>
-                <p>About time!!!!!</p>
+                <div style={this.divStyling}>
+                    {javaScriptFile.map((file:typeof javaScriptFile) => (
+                        <SingleFile key={key} id={key++} title={file.title} description={file.description} details={file.details}/>
+                    ))}
+                </div>
             </div>
         );
     }

@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import CSS from "csstype";
-let key = 1;
-
+let key = 0;
 type myProps = {
     id: number,
     title : string,
@@ -9,14 +8,13 @@ type myProps = {
     details : string[]
 }
 
-class SingleJavaFile extends Component<myProps> {
+class SingleFile extends Component<myProps> {
+
     constructor(props: myProps) {
         super(props);
-    };
-
-
+    }
     styling: CSS.Properties = {
-        backgroundColor: this.props.id % 2 === 0 ? 'lightgreen' : 'lightblue'
+        backgroundColor: this.props.id % 2 === 0 ? 'lightblue' : 'lightgreen'
     };
 
     getDetail() {
@@ -38,4 +36,4 @@ class SingleJavaFile extends Component<myProps> {
     }
 }
 
-export default SingleJavaFile;
+export default SingleFile;
