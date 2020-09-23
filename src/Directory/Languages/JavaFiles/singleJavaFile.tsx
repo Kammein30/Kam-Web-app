@@ -9,11 +9,11 @@ type myProps = {
     details : string[]
 }
 
-
 class SingleJavaFile extends Component<myProps> {
     constructor(props: myProps) {
         super(props);
     };
+
 
     styling: CSS.Properties = {
         backgroundColor: this.props.id % 2 === 0 ? 'lightgreen' : 'lightblue'
@@ -26,7 +26,6 @@ class SingleJavaFile extends Component<myProps> {
     };
 
     render() {
-
         return(
             <div style={this.styling}>
                 <h3>{this.props.title}</h3>

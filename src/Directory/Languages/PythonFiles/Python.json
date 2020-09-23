@@ -1,0 +1,60 @@
+[
+  {
+    "title": "Predicted the contents of a UDP packet",
+    "description": "Sent UDP messages between two machines functioning as the client and server respectively.",
+    "details": [
+      "Predictied how many bytes each field of the header would use, and what order each of the header fields and payload message would be in."
+    ]
+  },
+  {
+    "title": "TCP client/server",
+    "description": "Designed and implemented a simple protocol over TCP.",
+    "details": [
+      "Sent messages between machines using TCP.",
+      "Prompted the user for the network operation to preform (tcp send or tcp receive) and then called the selected function with appropriate argument values.",
+      "Created a single TCP connection to the already-waiting server and sent multiple files to the server. This operation checked the single-character status received from the server and displayed it to the user.",
+      "Listened for a TCP connection on a specified port, received and displayed multiple messages from a single client over a single socket, and sent a one-character response.",
+      "The server saved the files with a sequential number and uploaded them. Files over the previous socket connections were overwritten."
+    ]
+  },
+  {
+    "title": "Implemented an HTTP client",
+    "description": "Wrote a program to request and save a web resource, acting as an HTTP client. Code was written from scratch, sending and receiving bytes over a TCP connection rather than using a prebuilt HTTP library.",
+    "details": [
+      "Using HTTP, requested a web resource and stored the returned data in the specified file.",
+      "Using HTTP, requested a web resource and stored the returned payload data in the specified file.,"
+    ]
+  },
+
+  {
+    "title": "Implemented an HTTP server",
+    "description": "Wrote a short program to respond to HTTP requests and return web resources, acting as an HTTP server., ",
+    "details": [
+      "Sever handled file resources. Was able to service a client request by returning the contents of a file associated with the resource identifier.",
+      "Parsed the request Request-Line and all request header lines, storing the key/value pairs in a Python dictionary.",
+      "Returned an appropriate response Status-Line and header lines to the requesting client, regardless of what the user typed in the URL."
+    ]
+  },
+  {
+    "title": "Implemented an TFTP server",
+    "description": "Wrote a short program for a TFTP server. The served handled requests sent from a TFTP client.",
+    "details": [
+      "Received a request from the client, parsed the request, and verified that it is a read request.",
+      "Sent the data blocks to the client one by one waiting for an ack after each data message.",
+      "Handled error messages as well as acks for blocks that need to be retransmitted.",
+      "Closed the socket after successfully receiving an ack for the last block."
+    ]
+  },
+  {
+    "title": "RSA Encryption/Decryption",
+    "description": "Created and brute-force attacked 16-bit RSA encryption.",
+    "details": [
+      "Created code to create and use a public and private key.",
+      "Provided the user with a variety of encryption-related actions.",
+      "Created new public keys and computed the checksum for a message then encrypted it.",
+      "Verified a message with its checksum, interactively.",
+      "Applied the key, given as a tuple to the message.",
+      "Broke key given the public key using Extended Euclidean algorithm for lower Big - O."
+    ]
+  }
+]
