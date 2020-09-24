@@ -11,7 +11,7 @@ const length = jobFiles.length;
 class PreviousJobs extends Component {
 
     styling: CSS.Properties = {
-        backgroundColor: i % 2 === 0 ? 'lightblue' : 'lightgreen',
+        backgroundColor: i % 2 === 0 ? 'lightgreen' : 'lightblue',
         height: "100vh"
     };
 

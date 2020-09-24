@@ -17,7 +17,7 @@ class SingleJobFile extends Component<myProps>{
         console.log("id = " + props.id);
     }
     styling: CSS.Properties = {
-        backgroundColor: this.props.id % 2 === 0 ? 'lightblue' : 'lightgreen'
+        backgroundColor: this.props.id % 2 === 0 ? 'lightgreen' : 'lightblue'
     };
 
     details() {
