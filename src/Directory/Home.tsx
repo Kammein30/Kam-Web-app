@@ -9,9 +9,10 @@ class Home extends Component {
     render() {
         return (
             <div>
+                <div style={{background: "lightgreen"}}>
                 <h1 style={this.headers}>Welcome to my website!</h1>
-                <img src={require('../me.jpg')} alt="Kam " id="image" style={{height: "200px"}}/>
-
+                <img src={require('../me.jpg')} alt="Kam " id="image" style={{height: "250px"}}/>
+                </div>
                 <p id="BioBody" style={{background:"lightblue", height: "100vh"}}> <b>I am a third year Software Engineering student at MSOE with extended experience in JavaScript (mostly as a MEAN + MERN stack developer),
                     Java and fundamental knowledge of other languages such as Python, C++, and C.
                     I have extensive campus leadership experience also. Please contact me at mitchellk@msoe.edu.
