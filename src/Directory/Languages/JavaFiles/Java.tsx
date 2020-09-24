@@ -1,6 +1,5 @@
 import React, {Component, CSSProperties} from 'react';
 import SingleFile from "../singleFile";
-import "bootstrap/dist/css/bootstrap.css";
 
 const javaFile = require ("./Java.json");
 let key = -1;

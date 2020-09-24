@@ -1,8 +1,5 @@
 import React, {Component} from 'react';
 import CSS from 'csstype';
-import "./MSOE_Headshots_2653.jpg"
-import {url} from "inspector";
-const img = require('./MSOE_Headshots_2653.jpg');
 class Home extends Component {
 
     headers: CSS.Properties = {
@@ -11,9 +8,9 @@ class Home extends Component {
 
     render() {
         return (
-            <div style={{ backgroundImage: `url(${img})`}}>
+            <div>
                 <h1 style={this.headers}>Welcome to my website!</h1>
-                <img src={require('./MSOE_Headshots_2653.jpg')} alt="Kam " id="image" style={{height: "200px"}}/>
+                <img src={require('../me.jpg')} alt="Kam " id="image" style={{height: "200px"}}/>
 
                 <p id="BioBody" style={{background:"lightblue", height: "100vh"}}> <b>I am a third year Software Engineering student at MSOE with extended experience in JavaScript (mostly as a MEAN + MERN stack developer),
                     Java and fundamental knowledge of other languages such as Python, C++, and C.
