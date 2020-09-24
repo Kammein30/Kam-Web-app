@@ -9,10 +9,6 @@ type myProps = {
 }
 
 class SingleFile extends Component<myProps> {
-
-    constructor(props: myProps) {
-        super(props);
-    }
     styling: CSS.Properties = {
         backgroundColor: this.props.id % 2 === 0 ? 'lightblue' : 'lightgreen'
     };

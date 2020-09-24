@@ -1,4 +1,4 @@
-import React, {Component, EventHandler} from 'react';
+import React, {Component} from 'react';
 import './App.css';
 import Home from "./Directory/Home";
 import Emoji from "react-emoji-render";
@@ -6,7 +6,7 @@ import {BrowserRouter as Router} from "react-router-dom";
 import Java from "./Directory/Languages/JavaFiles/Java";
 import Python from "./Directory/Languages/PythonFiles/Python";
 import JavaScript from "./Directory/Languages/JavaScriptFIles/JavaScript";
-import PreviousJobs from "./Directory/Other/PreviousJobs";
+import PreviousJobs from "./Directory/Other/PreviousJobs/PreviousJobs";
 import FreeTime from "./Directory/Other/FreeTime";
 import ClassesTaken from "./Directory/Other/ClassesTaken";
 import "bootstrap/dist/css/bootstrap.css";
@@ -18,7 +18,7 @@ import CSS from "csstype";
 const Route = require("react-router-dom").Route;
 // onMouseOver={(e: React.FormEvent<HTMLInputElement>) => e.currentTarget.style.background = "red"}
 
-export default class App extends React.Component{
+export default class App extends Component{
 
         navItem: CSS.Properties = {
             color: "black",
