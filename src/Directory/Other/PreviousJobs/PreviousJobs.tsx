@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import SingleJobFile from "./SingleJobFile";
 import CSS from "csstype";
+import styled from "styled-components";
 
 const jobFiles = require('./PreviousJobs.json');
 //console.log(jobFiles);
@@ -15,16 +16,20 @@ class PreviousJobs extends Component {
         height: "100vh"
     };
 
+    styledDiv = styled.div`
+     backgroundColor: i % 2 === 0 ? 'lightgreen' : 'lightblue',
+        height: 100vh
+    ` ;
 
 
 
     render() {
-      return <div style={this.styling}>
+      return <this.styledDiv style={this.styling}>
           {
               jobFiles.map((file: typeof jobFiles) => file.map((job: typeof file) => (
                   <SingleJobFile key={i++} id={i} header={job.Header} title={job.Title} details={job.Details} length={length}/>
               )))}
-            </div>
+            </this.styledDiv>
     }
 }
 
